@@ -1,12 +1,12 @@
-
+import Card from "./component/Card"
 
 
 function App() {
 
   return (
     <>
-      <div className="text-8xl font-extrabold">
-        hello
+      <div >
+        <Card/>
      </div>
     </>
   )
