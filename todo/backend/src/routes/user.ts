@@ -4,8 +4,8 @@ const app = express.Router();
 
 app.get("/details",(req,res)=>{
    res.status(200).json({
-    name: "XYX",
-    Age : "13",
+    name: "Kamaldeep singh",
+    age : "20",
     heigth : "6ft"
    })
 })
