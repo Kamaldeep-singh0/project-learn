@@ -2,10 +2,13 @@ FROM node:16-alpine
 
 WORKDIR /app
 
-COPY package.json package-lock.json ./
-RUN npm run build
-
 COPY . .
+
+RUN npm install typescript
+
+RUN npx tsc
+
+RUN npm run build
 
 EXPOSE 5000
 
