@@ -13,7 +13,7 @@ const [data1,setData1] = useState<Post| null>(null);
 
   useEffect(()=>{
     const fetchData = async ()=>{
-    const response = await axios.get<Post>("http://localhost:3000/api/user/details")
+    const response = await axios.get<Post>(import.meta.env.DATABASE_URL)
       setData1(response.data)  ;
   }
      fetchData();
